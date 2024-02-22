@@ -1,6 +1,7 @@
 import { getColor1, getColor2 } from '../utils/colors'
 import Course, { CourseColor } from './Course'
 import { ShiftOccupation, ShiftType } from './Shift'
+import {MiniRoomDto} from './Room'
 
 export default interface Lesson {
 	// Attention, as this is used by FullCalendar as EventApi, if you use the URL property it will add it to the event
@@ -74,14 +75,5 @@ export function addColorToLesson(lesson: Lesson, color: CourseColor): LessonWith
 export type LessonDto = {
 	end: string
 	start: string
-	room: {
-		id: string
-		name: string
-		type: string
-		fullName: string
-		classification: {
-			'pt-PT': string
-			'en-GB': string
-		}
-	}
+	room: MiniRoomDto
 }
