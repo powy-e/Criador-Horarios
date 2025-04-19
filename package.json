@@ -36,7 +36,6 @@
     "sass": "^1.47.0",
     "typescript": "^4.1.3",
     "universal-cookie": "^4.0.4",
-    "use-react-screenshot": "^1.0.2",
     "web-vitals": "^1.1.0"
   },
   "scripts": {
@@ -44,7 +43,7 @@
     "lintFix": "eslint src/ --fix",
     "start": "CHOKIDAR_USEPOLLING=true react-scripts start",
     "build": "react-scripts build",
-		"postbuild": "cp extra_resources/* build",
+    "postbuild": "cp extra_resources/* build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "run-prod": "node server/index.js"
